@@ -7,13 +7,9 @@ import { CrowdContext } from '../Context/CrowdContext';
 import CountdownTimer from './CountdownTimer ';
 import { ethers } from 'ethers';
 
-const UserCharity = () => {
+const UserCharity = ({ setCurrentPage }) => {
 	const { CContract, accountAddress } = useContext(CrowdContext);
 	const [charities, setCharities] = useState([]);
-	// function weiToEth(wei) {
-	// 	const ethInWei = BigInt('1000000000000000000'); // 1 Ether = 10^18 Wei
-	// 	return ((wei) / ethInWei).toString();
-	// }
 	useEffect(() => {
 		const getCharities = async () => {
 			if (!CContract) {
@@ -69,7 +65,7 @@ const UserCharity = () => {
 		<>
 			<ToastContainer />
 			<center>
-				<h1 className={styles.h1}>User Campaigns</h1>
+				<h1 className={styles.h1}>Your Campaigns</h1>
 				<table className={styles.table}>
 					<thead>
 						<tr>

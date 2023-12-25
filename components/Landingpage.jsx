@@ -7,22 +7,21 @@ const Landingpage = () => {
 				<center>
 					<h1 className={styles.h1}>Welcome to WEB3.0 CrowdFunding Platform</h1>
 					<p className={styles.subheading}>
-						The Future of Crowdfunding in the Era of Web3.0
+						The Future of Crowdfunding in the Era of Web 3.0
 					</p>
+
+					<p className={styles.subheading}>Login in to continue</p>
 				</center>
-
-				<button className={styles.getstarted}>Get started</button>
-
 				<div className={styles.container}>
 					<div className={styles.card}>
 						<div className={styles.content}>
 							<h2>Empowering Innovation</h2>
 							<p>
 								Step into the era of Web3.0, where decentralized technologies
-								redefine collaboration and transparency. [Platform Name] is more
-								than just a crowdfunding platform; it's a catalyst for
-								groundbreaking projects and ideas that have the potential to
-								transform industries and reshape the future.
+								redefine collaboration and transparency. WEB 3.0 Crowd funding
+								platform is more than just a crowdfunding platform; it's a
+								catalyst for groundbreaking projects and ideas that have the
+								potential to transform industries and reshape the future.
 							</p>
 						</div>
 					</div>
@@ -37,10 +36,11 @@ const Landingpage = () => {
 									security for both creators and backers.
 								</li>
 								<li>
-									<strong>Community-Driven:</strong> [Platform Name] thrives on
-									community collaboration. Our decentralized governance model
-									empowers users to have a say in the projects that get funded,
-									fostering a sense of ownership and inclusivity.
+									<strong>Community-Driven:</strong> WEB 3.0 Crowd funding
+									platform thrives on community collaboration. Our decentralized
+									governance model empowers users to have a say in the projects
+									that get funded, fostering a sense of ownership and
+									inclusivity.
 								</li>
 								<li>
 									<strong>Web3.0 Smart Contracts:</strong> Experience seamless

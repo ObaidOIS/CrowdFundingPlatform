@@ -13,9 +13,12 @@ const HomePage = () => {
 		useContext(CrowdContext);
 	useEffect(() => {
 		if (!accountAddress) {
-			toast.error('Please connect wallet first');
+			try {
+				connectWallet();
+			} catch (error) {
+				// toast.error('Please connect wallet first');
+			}
 		}
-		connectWallet();
 	}, []);
 
 	return (
@@ -29,7 +32,7 @@ const HomePage = () => {
 					{isLoggedIn ? (
 						<>
 							<Createcharity />
-							<UserCharity />
+							{/* <UserCharity /> */}
 						</>
 					) : (
 						<Landingpage />

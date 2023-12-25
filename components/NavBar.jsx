@@ -1,5 +1,4 @@
 import { useEffect, useState, useContext } from 'react';
-
 import { CrowdContext } from '../Context/CrowdContext';
 const NavBar = ({ setCurrentPage }) => {
 	const { isLoggedIn, setIsLoggedIn, connectWallet, accountAddress } =
@@ -47,6 +46,32 @@ const NavBar = ({ setCurrentPage }) => {
 				</h2>
 			</div>
 			<div className={'buttons'}>
+				{isLoggedIn ? (
+					<>
+						<button
+							className={'center-button'}
+							onClick={() => handlePageChange('donate')}
+						>
+							Donate
+						</button>
+						<button
+							className={'center-button'}
+							onClick={() => handlePageChange('usercampaigns')}
+						>
+							Your Campaigns
+						</button>
+						{/* <button
+							className={'logout'}
+							onClick={() => handleLogout()}
+						>
+							Logout
+						</button> */}
+					</>
+				) : (
+					<></>
+				)}
+			</div>
+			<div className={'buttons'}>
 				{!accountAddress ? (
 					<>
 						<button
@@ -63,12 +88,18 @@ const NavBar = ({ setCurrentPage }) => {
 				)}
 				{isLoggedIn ? (
 					<>
-						<button
+						{/* <button
 							className={'connect-wallet'}
 							onClick={() => handlePageChange('donate')}
 						>
 							Donate
 						</button>
+						<button
+							className={'connect-wallet'}
+							onClick={() => handlePageChange('usercampaigns')}
+						>
+							Your Campaigns
+						</button> */}
 						<button
 							className={'logout'}
 							onClick={() => handleLogout()}

@@ -2,6 +2,7 @@ import React, { createContext, useCallback, useEffect, useState } from 'react';
 import { ethers, Contract } from 'ethers';
 import abi from '../Contract/CrowdFunding.json';
 import { CrowdContext } from './CrowdContext';
+import { toast } from 'react-toastify';
 const AppContext = ({ children }) => {
 	const [provider, setProvider] = useState(null);
 	const [signer, setSigner] = useState(null);
@@ -28,8 +29,10 @@ const AppContext = ({ children }) => {
 					setProvider(provider);
 					setSigner(signer);
 					setCContract(contract);
+					toast.success('Wallet connected successfully!');
 				} catch (error) {
 					console.error('User denied account access:', error);
+					toast.error('Please connect wallet first');
 				}
 			} else {
 				console.error('Please use MetaMask to connect your wallet.');

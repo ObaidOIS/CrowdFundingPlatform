@@ -1,13 +1,15 @@
-/* Global  css */
-
 body {
-	/* background-color: rgba(0, 0, 0, 0.904); */
 	background-image: url('../public/img.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 
-	height: 100vh;
+	height: 150vh;
+}
+@media screen and (max-width: 1300px) {
+	body {
+		height: auto;
+	}
 }
 
 .navbar {
@@ -33,6 +35,16 @@ body {
 
 .connect-wallet {
 	background-color: #ff5e3a;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.center-button {
+	/* background-color: #ff5e3a; */
+	background-color: transparent;
 	color: #fff;
 	padding: 10px 20px;
 	border: none;

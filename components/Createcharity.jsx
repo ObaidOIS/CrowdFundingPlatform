@@ -26,7 +26,7 @@ const Createcharity = () => {
 			} catch (error) {
 				console.error('user rejected transaction', error);
 				// toast.error('Error creating charity. Please try again.');
-				toast.error('transaction canceled!');
+				// toast.error('transaction canceled!');
 			}
 
 			// ;
