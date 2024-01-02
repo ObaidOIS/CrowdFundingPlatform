@@ -1,0 +1,57 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 20px;
+	margin-top: 200px; /* Adjusted margin-top for better positioning */
+}
+
+.card {
+	width: 400px;
+	height: 750px; /* Increased height for more content space */
+	background-color: rgba(
+		100,
+		107,
+		107,
+		0.514
+	); /* Changed background color for a cleaner look */
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Adjusted box shadow for a softer effect */
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.content {
+	margin-top: 50px;
+	padding: 20px;
+	text-align: justify;
+}
+
+.h1 {
+	color: #333333;
+}
+
+.subheading {
+	color: #666666;
+	margin-top: 10px;
+}
+.getstarted {
+	margin-top: 20px;
+	width: 250px;
+	height: 50px;
+	background-color: rgb(172, 49, 95);
+	color: #ffffff;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: background-color 0.3s ease; /* Added transition for smooth color change */
+}
+
+.getstarted:hover {
+	background-color: #ff5e8e; /* Adjusted color on hover */
+}
